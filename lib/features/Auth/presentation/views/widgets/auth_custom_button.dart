@@ -24,7 +24,7 @@ class AuthCustomButton extends StatelessWidget {
             child: Image.asset(logo, height: 25),
           ),
           // SizedBox(width: 10),
-          Text(text, style: TextStyle(color: AppColors.surface)),
+          Text(text, style: TextStyle(color: AppColors.gray10)),
         ],
       ),
     );

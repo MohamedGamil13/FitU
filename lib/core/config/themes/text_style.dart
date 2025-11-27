@@ -31,6 +31,10 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.seconderyText,
   );
+  static final TextStyle lexendsemuBoldButton16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+  );
 
   AppTextStyles._();
 }
