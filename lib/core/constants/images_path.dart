@@ -9,5 +9,7 @@ class AppImages {
   static final String imagePageViewLight3 = 'assets/images/onboardong3L.png';
   static final String imagePageViewDark3 = 'assets/images/onboarding3Dpng.png';
   static final String registerImage = 'assets/images/register.png';
+  static final String googleIcon = 'assets/images/GoogleIcon.png';
+  static final String faceBookIcon = 'assets/images/FaceBookLogo.png';
   AppImages._();
 }

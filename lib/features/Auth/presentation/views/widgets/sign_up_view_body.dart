@@ -1,4 +1,7 @@
 import 'package:fitu/core/config/themes/text_style.dart';
+import 'package:fitu/core/constants/images_path.dart';
+import 'package:fitu/features/Auth/presentation/views/widgets/auth_custom_button.dart';
+import 'package:fitu/features/Auth/presentation/views/widgets/custom_divider.dart';
 import 'package:flutter/material.dart';
 
 class SignUpViewBody extends StatelessWidget {
@@ -36,7 +39,20 @@ class SignUpViewBody extends StatelessWidget {
                   hintText: 'Enter your confirmPassword',
                 ),
               ),
+              SizedBox(height: 35),
               ElevatedButton(onPressed: () {}, child: Text('Create Account')),
+              SizedBox(height: 45),
+              CustomDivider(textBetween: 'OR'),
+              SizedBox(height: 35),
+              AuthCustomButton(
+                text: 'Sign In With Google',
+                logo: AppImages.googleIcon,
+              ),
+              SizedBox(height: 25),
+              AuthCustomButton(
+                text: 'Sign In With FaceBook',
+                logo: AppImages.faceBookIcon,
+              ),
             ],
           ),
         ),
