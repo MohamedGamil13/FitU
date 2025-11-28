@@ -16,5 +16,6 @@ class AppColors {
   static const Color seconderyText = Color(0xff9fa8b0);
   static const Color gray10 = Color(0xffd1d5db);
   static const Color outlineBorderColor = Color(0xffd1d5db);
-  static const Color fillColor = Color(0xff1c2d21);
+  static const Color fillColorDark = Color(0xff1c2d21);
+  static const Color fillColorLight = Color(0xffF2F2F2);
 }

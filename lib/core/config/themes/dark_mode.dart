@@ -31,7 +31,7 @@ ThemeData getDarkMode() {
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
-      fillColor: AppColors.fillColor,
+      fillColor: AppColors.fillColorDark,
       filled: true,
       outlineBorder: BorderSide(color: AppColors.outlineBorderColor),
       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),

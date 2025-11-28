@@ -1,4 +1,5 @@
 import 'package:fitu/core/config/themes/app_colors.dart';
+import 'package:fitu/core/config/themes/extension/theme_extension.dart';
 import 'package:flutter/material.dart';
 
 class AuthCustomButton extends StatelessWidget {
@@ -9,8 +10,12 @@ class AuthCustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.fillColor,
-        foregroundColor: AppColors.surface,
+        backgroundColor: context.isdarkMode
+            ? AppColors.fillColorDark
+            : AppColors.backGroundLight,
+        foregroundColor: context.isdarkMode
+            ? AppColors.surface
+            : AppColors.seconderyText,
 
         // minimumSize: const Size(380, 50),
         // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -24,7 +29,7 @@ class AuthCustomButton extends StatelessWidget {
             child: Image.asset(logo, height: 25),
           ),
           // SizedBox(width: 10),
-          Text(text, style: TextStyle(color: AppColors.gray10)),
+          Text(text),
         ],
       ),
     );

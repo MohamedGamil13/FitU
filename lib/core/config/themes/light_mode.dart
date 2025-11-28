@@ -29,5 +29,23 @@ ThemeData getLightMode() {
         textStyle: AppTextStyles.lexendBold,
       ),
     ),
+    inputDecorationTheme: InputDecorationTheme(
+      fillColor: Colors.grey.shade100,
+      filled: true,
+      outlineBorder: BorderSide(color: Colors.transparent),
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: AppColors.backGroundLight),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: AppColors.error),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: AppColors.primaryColor, width: 1),
+      ),
+    ),
   );
 }
