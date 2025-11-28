@@ -4,17 +4,20 @@ import 'package:flutter/material.dart';
 class CustomTextRow extends StatelessWidget {
   const CustomTextRow({
     super.key,
-    required this.text,
+    this.text = '',
     required this.clkText,
     required this.action,
+    this.mainAxisAlignment = MainAxisAlignment.center,
   });
   final String text;
   final String clkText;
   final void Function()? action;
+  final MainAxisAlignment mainAxisAlignment;
+
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: .center,
+      mainAxisAlignment: mainAxisAlignment,
       children: [
         Text(text),
         // SizedBox(width: 6),

@@ -1,9 +1,11 @@
 import 'package:fitu/core/constants/images_path.dart';
+import 'package:fitu/core/routes/router_name.dart';
 import 'package:fitu/features/Auth/presentation/views/widgets/auth_custom_button.dart';
 import 'package:fitu/features/Auth/presentation/views/widgets/custom_divider.dart';
 import 'package:fitu/features/Auth/presentation/views/widgets/custom_text_row.dart';
 import 'package:fitu/features/Auth/presentation/views/widgets/sign_up_textfields.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({super.key});
@@ -33,7 +35,9 @@ class SignUpViewBody extends StatelessWidget {
                 CustomTextRow(
                   text: 'Already have an account?',
                   clkText: 'Log In',
-                  action: () {},
+                  action: () {
+                    context.go(AppRoutes.signInView);
+                  },
                 ),
               ],
             ),

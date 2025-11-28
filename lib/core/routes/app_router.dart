@@ -1,5 +1,7 @@
 import 'package:fitu/core/routes/router_name.dart';
 import 'package:fitu/features/Auth/presentation/views/register_view.dart';
+import 'package:fitu/features/Auth/presentation/views/reset_password_view.dart';
+import 'package:fitu/features/Auth/presentation/views/sign_in_view.dart';
 import 'package:fitu/features/Auth/presentation/views/sign_up_view.dart';
 import 'package:fitu/features/home/presentation/views/home_view.dart';
 import 'package:fitu/features/onboarding/presentation/views/onboarding_view.dart';
@@ -30,6 +32,14 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: AppRoutes.signUpView,
       builder: (context, state) => const SignUpView(),
+    ),
+    GoRoute(
+      path: AppRoutes.signInView,
+      builder: (context, state) => const SignInView(),
+    ),
+    GoRoute(
+      path: AppRoutes.resetPasswordView,
+      builder: (context, state) => const ResetPasswordView(),
     ),
   ],
 );

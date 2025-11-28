@@ -18,4 +18,5 @@ class AppColors {
   static const Color outlineBorderColor = Color(0xffd1d5db);
   static const Color fillColorDark = Color(0xff1c2d21);
   static const Color fillColorLight = Color(0xffF2F2F2);
+  static const Color outlineBorderColorDark = Color(0xff3b5443);
 }

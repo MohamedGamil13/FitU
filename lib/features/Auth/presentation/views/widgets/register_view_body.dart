@@ -44,7 +44,9 @@ class RegisterViewBody extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                context.go(AppRoutes.signInView);
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.secondColor,
                 foregroundColor: AppColors.surface,

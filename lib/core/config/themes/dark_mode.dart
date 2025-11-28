@@ -35,6 +35,10 @@ ThemeData getDarkMode() {
       filled: true,
       outlineBorder: BorderSide(color: AppColors.outlineBorderColor),
       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: AppColors.outlineBorderColorDark),
+      ),
     ),
   );
 }
