@@ -46,26 +46,30 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
         // LOGO
         SlideTransition(
           position: slideAnimation,
-          child: FadeTransition(
-            opacity: fadeAnimation,
-            child: context.isdarkMode
-                ? Image.asset(AppImages.darkModeLogo)
-                : Image.asset(AppImages.lightModeLogo),
+          child: RepaintBoundary(
+            child: FadeTransition(
+              opacity: fadeAnimation,
+              child: context.isdarkMode
+                  ? Image.asset(AppImages.darkModeLogo)
+                  : Image.asset(AppImages.lightModeLogo),
+            ),
           ),
         ),
 
         Positioned(
           bottom: 30,
-          child: FadeTransition(
-            opacity: fadeAnimationText,
-            child: Text(
-              'Stay fit, Stay you',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: context.isdarkMode
-                    ? AppColors.darkModeLogoColor
-                    : AppColors.lightModeLogoColor,
+          child: RepaintBoundary(
+            child: FadeTransition(
+              opacity: fadeAnimationText,
+              child: Text(
+                'Stay fit, Stay you',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: context.isdarkMode
+                      ? AppColors.darkModeLogoColor
+                      : AppColors.lightModeLogoColor,
+                ),
               ),
             ),
           ),

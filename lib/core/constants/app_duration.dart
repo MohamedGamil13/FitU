@@ -1,5 +1,5 @@
 class AppDuration {
-  static final Duration kDurationLogo = Duration(seconds: 2);
-  static final Duration kDurationSolgan = Duration(seconds: 4);
-  AppDuration._();
+  static const Duration kDurationLogo = Duration(seconds: 2);
+  static const Duration kDurationSolgan = Duration(seconds: 4);
+  const AppDuration._();
 }

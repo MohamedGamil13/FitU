@@ -1,4 +1,4 @@
 class AppFonts {
   AppFonts._();
-  static final String lexend = "Lexend";
+  static const String lexend = "Lexend";
 }

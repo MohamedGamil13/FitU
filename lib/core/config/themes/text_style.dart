@@ -36,5 +36,5 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
   );
 
-  AppTextStyles._();
+  const AppTextStyles._();
 }

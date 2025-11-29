@@ -7,7 +7,7 @@ ThemeData getDarkMode() {
     scaffoldBackgroundColor: AppColors.backGroundDark,
     brightness: .dark,
     useMaterial3: false,
-    colorScheme: ColorScheme(
+    colorScheme: const ColorScheme(
       brightness: .dark,
       primary: AppColors.primaryColor,
       onPrimary: AppColors.onPrimaryColor,
@@ -33,11 +33,11 @@ ThemeData getDarkMode() {
     inputDecorationTheme: InputDecorationTheme(
       fillColor: AppColors.fillColorDark,
       filled: true,
-      outlineBorder: BorderSide(color: AppColors.outlineBorderColor),
+      outlineBorder: const BorderSide(color: AppColors.outlineBorderColor),
       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.outlineBorderColorDark),
+        borderSide: const BorderSide(color: AppColors.outlineBorderColorDark),
       ),
     ),
   );

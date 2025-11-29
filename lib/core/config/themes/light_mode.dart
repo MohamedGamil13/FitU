@@ -6,7 +6,7 @@ ThemeData getLightMode() {
   return ThemeData(
     brightness: .light,
     useMaterial3: false,
-    colorScheme: ColorScheme(
+    colorScheme: const ColorScheme(
       brightness: .light,
       primary: AppColors.primaryColor,
       onPrimary: AppColors.onPrimaryColor,
@@ -32,19 +32,19 @@ ThemeData getLightMode() {
     inputDecorationTheme: InputDecorationTheme(
       fillColor: Colors.grey.shade100,
       filled: true,
-      outlineBorder: BorderSide(color: Colors.transparent),
+      outlineBorder: const BorderSide(color: Colors.transparent),
       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.backGroundLight),
+        borderSide: const BorderSide(color: AppColors.backGroundLight),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.error),
+        borderSide: const BorderSide(color: AppColors.error),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.primaryColor, width: 1),
+        borderSide: const BorderSide(color: AppColors.primaryColor, width: 1),
       ),
     ),
   );
