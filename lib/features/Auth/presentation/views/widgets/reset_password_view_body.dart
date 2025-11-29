@@ -15,18 +15,21 @@ class ResetPasswordViewBody extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 18),
         child: Column(
           children: [
-            SizedBox(height: 200),
-            Text('Reset Your Password', style: AppTextStyles.lexendBold36),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 200),
+            const Text(
+              'Reset Your Password',
+              style: AppTextStyles.lexendBold36,
+            ),
+            const SizedBox(height: 10),
+            const Text(
               'Enter your email to receive a reset link',
               style: AppTextStyles.lexendSemiBold18,
             ),
-            SizedBox(height: 35),
-            CustomTextfield(fieldHint: 'Email Address'),
-            SizedBox(height: 35),
+            const SizedBox(height: 35),
+            const CustomTextfield(fieldHint: 'Email Address'),
+            const SizedBox(height: 35),
             ElevatedButton(onPressed: () {}, child: Text('Send Reset Link')),
-            SizedBox(height: 35),
+            const SizedBox(height: 35),
             CustomTextRow(
               clkText: 'Back to Login',
               action: () {

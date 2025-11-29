@@ -16,14 +16,14 @@ class PageView2 extends StatelessWidget {
         context.isdarkMode
             ? Image.asset(AppImages.imagePageViewDark2, fit: .scaleDown)
             : Image.asset(AppImages.imagePageView2),
-        SizedBox(height: 100),
-        Text(
+        const SizedBox(height: 100),
+        const Text(
           'Smart Meal Recommendations',
           style: AppTextStyles.lexendBold30,
           textAlign: .center,
         ),
-        SizedBox(height: 20),
-        Text(
+        const SizedBox(height: 20),
+        const Text(
           'Get personalized meal suggestions tailored to your goals and daily calorie needs',
           style: AppTextStyles.lexendSemiBold16,
           textAlign: .center,

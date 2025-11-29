@@ -19,19 +19,19 @@ class SignUpViewBody extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SignUpTextfields(),
-                CustomDivider(textBetween: 'OR'),
-                SizedBox(height: 35),
-                AuthCustomButton(
+                const SignUpTextfields(),
+                const CustomDivider(textBetween: 'OR'),
+                const SizedBox(height: 35),
+                const AuthCustomButton(
                   text: 'Sign In With Google',
                   logo: AppImages.googleIcon,
                 ),
-                SizedBox(height: 25),
-                AuthCustomButton(
+                const SizedBox(height: 25),
+                const AuthCustomButton(
                   text: 'Sign In With FaceBook',
                   logo: AppImages.faceBookIcon,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 CustomTextRow(
                   text: 'Already have an account?',
                   clkText: 'Log In',

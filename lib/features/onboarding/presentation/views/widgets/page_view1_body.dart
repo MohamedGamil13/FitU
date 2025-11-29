@@ -10,17 +10,17 @@ class PageView1Body extends StatelessWidget {
     return Column(
       children: [
         Image.asset(AppImages.imagePageView1),
-        SizedBox(height: 30),
-        Text('Track your Health', style: AppTextStyles.lexendBold30),
-        SizedBox(height: 5),
-        Text('Easily', style: AppTextStyles.lexendBold30),
-        SizedBox(height: 15),
-        Text(
+        const SizedBox(height: 30),
+        const Text('Track your Health', style: AppTextStyles.lexendBold30),
+        const SizedBox(height: 5),
+        const Text('Easily', style: AppTextStyles.lexendBold30),
+        const SizedBox(height: 15),
+        const Text(
           'Monitor your calories, meals, and daily activity with simple and smart tools',
           style: AppTextStyles.lexendSemiBold16,
           textAlign: .center,
         ),
-        Spacer(),
+        const Spacer(),
       ],
     );
   }

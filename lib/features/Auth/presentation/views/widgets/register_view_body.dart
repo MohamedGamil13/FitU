@@ -28,21 +28,21 @@ class RegisterViewBody extends StatelessWidget {
               },
               child: Image.asset(AppImages.registerImage),
             ),
-            SizedBox(height: 140),
-            Text('FitU', style: AppTextStyles.lexendBold36),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 140),
+            const Text('FitU', style: AppTextStyles.lexendBold36),
+            const SizedBox(height: 10),
+            const Text(
               'Your Fitness Journey Starts Here',
               style: AppTextStyles.lexendSemiBold18,
             ),
-            Spacer(flex: 2),
+            const Spacer(flex: 2),
             ElevatedButton(
               onPressed: () {
                 context.push(AppRoutes.signUpView);
               },
-              child: Text('Create Account'),
+              child: const Text('Create Account'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 context.go(AppRoutes.signInView);
@@ -51,9 +51,9 @@ class RegisterViewBody extends StatelessWidget {
                 backgroundColor: AppColors.secondColor,
                 foregroundColor: AppColors.surface,
               ),
-              child: Text('Log In'),
+              child: const Text('Log In'),
             ),
-            Spacer(flex: 2),
+            const Spacer(flex: 2),
           ],
         ),
       ),

@@ -15,24 +15,24 @@ class PageView3 extends StatelessWidget {
             context.isdarkMode
                 ? Image.asset(AppImages.imagePageViewDark3)
                 : Image.asset(AppImages.imagePageViewLight3),
-            SizedBox(height: 100),
-            Text(
+            const SizedBox(height: 100),
+            const Text(
               'Your Fitness Journey ',
               style: AppTextStyles.lexendBold30,
               textAlign: .center,
             ),
-            Text(
+            const Text(
               'Starts Now!',
               style: AppTextStyles.lexendBold30,
               textAlign: .center,
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Get ready to achieve your goals with ',
               style: AppTextStyles.lexendSemiBold16,
               textAlign: .center,
             ),
-            Text(
+            const Text(
               'FitU',
               style: AppTextStyles.lexendSemiBold16,
               textAlign: .center,

@@ -8,43 +8,43 @@ class SignUpTextfields extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text('Join FitU', style: AppTextStyles.lexendBold36),
-        SizedBox(height: 10),
-        Text(
+        const Text('Join FitU', style: AppTextStyles.lexendBold36),
+        const SizedBox(height: 10),
+        const Text(
           'Start your fitness journay today.',
           style: AppTextStyles.lexendSemiBold18,
         ),
-        SizedBox(height: 35),
-        TextField(
+        const SizedBox(height: 35),
+        const TextField(
           decoration: InputDecoration(
             hintText: 'Enter your name',
             prefixIcon: Icon(Icons.person),
           ),
         ),
-        SizedBox(height: 15),
-        TextField(
+        const SizedBox(height: 15),
+        const TextField(
           decoration: InputDecoration(
             hintText: 'Enter your Email',
             prefixIcon: Icon(Icons.email),
           ),
         ),
-        SizedBox(height: 15),
-        TextField(
+        const SizedBox(height: 15),
+        const TextField(
           decoration: InputDecoration(
             hintText: 'Enter your Password',
             prefixIcon: Icon(Icons.lock_outlined),
           ),
         ),
-        SizedBox(height: 15),
-        TextField(
+        const SizedBox(height: 15),
+        const TextField(
           decoration: InputDecoration(
             hintText: 'confirm your Password',
             prefixIcon: Icon(Icons.lock_outlined),
           ),
         ),
-        SizedBox(height: 35),
+        const SizedBox(height: 35),
         ElevatedButton(onPressed: () {}, child: Text('Create Account')),
-        SizedBox(height: 45),
+        const SizedBox(height: 45),
       ],
     );
   }

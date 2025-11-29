@@ -19,8 +19,8 @@ class CustomTextfield extends StatelessWidget {
                 : AppColors.onSurface,
           ),
         ),
-        SizedBox(height: 8),
-        TextField(),
+        const SizedBox(height: 8),
+        const TextField(),
       ],
     );
   }

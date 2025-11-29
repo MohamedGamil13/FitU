@@ -19,16 +19,16 @@ class SigninViewBody extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Text('Welcome Back!', style: AppTextStyles.lexendBold36),
-                SizedBox(height: 10),
-                Text(
+                const Text('Welcome Back!', style: AppTextStyles.lexendBold36),
+                const SizedBox(height: 10),
+                const Text(
                   'Log in to continue your fitness journey.',
                   style: AppTextStyles.lexendSemiBold18,
                 ),
-                SizedBox(height: 45),
-                CustomTextfield(fieldHint: 'Email Address'),
-                SizedBox(height: 20),
-                CustomTextfield(fieldHint: 'Password'),
+                const SizedBox(height: 45),
+                const CustomTextfield(fieldHint: 'Email Address'),
+                const SizedBox(height: 20),
+                const CustomTextfield(fieldHint: 'Password'),
                 CustomTextRow(
                   clkText: 'Forget Password?',
                   action: () {
@@ -36,13 +36,13 @@ class SigninViewBody extends StatelessWidget {
                   },
                   mainAxisAlignment: .end,
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton(onPressed: () {}, child: Text('Log In')),
-                SizedBox(height: 35),
-                CustomDivider(textBetween: 'Or continue with'),
-                SizedBox(height: 35),
-                LogoCustomRow(),
-                SizedBox(height: 35),
+                const SizedBox(height: 35),
+                const CustomDivider(textBetween: 'Or continue with'),
+                const SizedBox(height: 35),
+                const LogoCustomRow(),
+                const SizedBox(height: 35),
                 CustomTextRow(
                   text: 'Don’t have an account?',
                   clkText: 'Create one',
