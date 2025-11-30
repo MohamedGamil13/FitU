@@ -20,7 +20,6 @@ void main() async {
         ? HydratedStorageDirectory.web
         : HydratedStorageDirectory((await getTemporaryDirectory()).path),
   );
-
   runApp(FitU());
 }
 
