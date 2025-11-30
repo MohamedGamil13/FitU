@@ -32,6 +32,22 @@ migrate_working_dir/
 .pub/
 /build/
 /coverage/
+# Firebase config + secrets
+/android/app/google-services.json
+/ios/Runner/GoogleService-Info.plist
+
+# Env and local secrets
+.env
+*.keystore
+*.jks
+*.p12
+
+# Flutter build files
+/build
+/.dart_tool
+.packages
+.pub-cache
+
 
 # Symbolication related
 app.*.symbols

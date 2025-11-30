@@ -31,6 +31,7 @@ class SignUpViewBody extends StatelessWidget {
                   text: 'Sign In With FaceBook',
                   logo: AppImages.faceBookIcon,
                 ),
+
                 const SizedBox(height: 10),
                 CustomTextRow(
                   text: 'Already have an account?',

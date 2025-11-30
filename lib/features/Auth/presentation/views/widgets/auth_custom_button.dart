@@ -1,5 +1,6 @@
 import 'package:fitu/core/config/themes/app_colors.dart';
 import 'package:fitu/core/config/themes/extension/theme_extension.dart';
+import 'package:fitu/core/gg.dart';
 import 'package:flutter/material.dart';
 
 class AuthCustomButton extends StatelessWidget {
@@ -20,7 +21,9 @@ class AuthCustomButton extends StatelessWidget {
         // minimumSize: const Size(380, 50),
         // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
-      onPressed: () {},
+      onPressed: () async {
+        signInWithGoogle();
+      },
       child: Row(
         mainAxisAlignment: .center,
         children: [
