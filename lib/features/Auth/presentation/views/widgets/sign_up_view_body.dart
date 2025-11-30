@@ -1,4 +1,5 @@
 import 'package:fitu/core/constants/images_path.dart';
+import 'package:fitu/core/helpers/custom_snackbar.dart';
 import 'package:fitu/core/routes/router_name.dart';
 import 'package:fitu/features/Auth/presentation/view_model/cubit/sign_in_with_google_cubit.dart';
 import 'package:fitu/features/Auth/presentation/views/widgets/auth_custom_button.dart';
@@ -30,9 +31,7 @@ class SignUpViewBody extends StatelessWidget {
                     if (state is SignInWithGoogleSucess) {
                       context.go(AppRoutes.homeView);
                     } else if (state is SignInWithGoogleFailure) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text(state.errorMessage)),
-                      );
+                      customSnackBar(context, state);
                     }
                   },
                   builder: (context, state) {

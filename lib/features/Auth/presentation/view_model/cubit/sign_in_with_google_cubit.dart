@@ -12,13 +12,21 @@ class SignInWithGoogleCubit extends Cubit<SignInWithGoogleState> {
   Future<void> signInWithGoogle() async {
     emit(SignInWithGoogleWaiting());
     try {
-      final user = await repo.signInWithGoogle();
+      try {
+        final user = await repo.signInWithGoogle();
 
-      if (user != null) {
-        emit(SignInWithGoogleSucess(user: user));
-      } else {
+        if (user != null) {
+          emit(SignInWithGoogleSucess(user: user));
+        } else {
+          // emit(
+          //   SignInWithGoogleFailure(errorMessage: "Sign-in cancelled or failed "),
+          // );
+        }
+      } on FirebaseAuthException catch (e) {
         emit(
-          SignInWithGoogleFailure(errorMessage: "Sign-in cancelled or failed"),
+          SignInWithGoogleFailure(
+            errorMessage: "Sign-in cancelled or failed  ${e.message}",
+          ),
         );
       }
     } on FirebaseAuthException catch (e) {
