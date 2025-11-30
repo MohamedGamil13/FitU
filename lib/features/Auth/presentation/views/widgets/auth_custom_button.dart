@@ -3,9 +3,15 @@ import 'package:fitu/core/config/themes/extension/theme_extension.dart';
 import 'package:flutter/material.dart';
 
 class AuthCustomButton extends StatelessWidget {
-  const AuthCustomButton({super.key, required this.text, required this.logo});
+  const AuthCustomButton({
+    super.key,
+    required this.text,
+    required this.logo,
+    required this.action,
+  });
   final String text;
   final String logo;
+  final void Function()? action;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -20,7 +26,7 @@ class AuthCustomButton extends StatelessWidget {
         // minimumSize: const Size(380, 50),
         // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
-      onPressed: () {},
+      onPressed: action,
       child: Row(
         mainAxisAlignment: .center,
         children: [

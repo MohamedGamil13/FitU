@@ -11,6 +11,10 @@ final class SignInWithGoogleSucess extends SignInWithGoogleState {
   SignInWithGoogleSucess({required this.user});
 }
 
-final class SignInWithGoogleFailure extends SignInWithGoogleState {}
+final class SignInWithGoogleFailure extends SignInWithGoogleState {
+  final String errorMessage;
+
+  SignInWithGoogleFailure({required this.errorMessage});
+}
 
 final class SignInWithGoogleWaiting extends SignInWithGoogleState {}

@@ -46,6 +46,7 @@ dependencies:
   google_sign_in: ^7.2.0
   get_it: ^9.1.1
   flutter_dotenv: ^6.0.0
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:
