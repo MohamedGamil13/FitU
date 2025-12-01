@@ -38,11 +38,12 @@ class SignUpViewBody extends StatelessWidget {
                     return AuthCustomButton(
                       text: 'Sign In With Google',
                       logo: AppImages.googleIcon,
-                      action: () {
-                        context
-                            .read<SignInWithGoogleCubit>()
-                            .signInWithGoogle();
-                      },
+                      action: () {},
+                      //  () {
+                      //   context
+                      //       .read<SignInWithGoogleCubit>()
+                      //       .signInWithGoogle();
+                      // },
                     );
                   },
                 ),

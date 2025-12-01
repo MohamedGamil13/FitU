@@ -1,5 +1,7 @@
 import 'package:fitu/core/config/themes/text_style.dart';
+import 'package:fitu/core/routes/router_name.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SignUpTextfields extends StatelessWidget {
   const SignUpTextfields({super.key});
@@ -43,7 +45,12 @@ class SignUpTextfields extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 35),
-        ElevatedButton(onPressed: () {}, child: Text('Create Account')),
+        ElevatedButton(
+          onPressed: () {
+            context.go(AppRoutes.homeView);
+          },
+          child: Text('Create Account'),
+        ),
         const SizedBox(height: 45),
       ],
     );

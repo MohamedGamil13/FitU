@@ -31,9 +31,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.seconderyText,
   );
-  static const TextStyle lexendsemuBoldButton16 = TextStyle(
+  static const TextStyle lexendsemiBoldButton16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
+  );
+  static const TextStyle lexendsemiBoldButton22 = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
   );
 
   const AppTextStyles._();

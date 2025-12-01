@@ -23,7 +23,7 @@ class CustomTextRow extends StatelessWidget {
         // SizedBox(width: 6),
         TextButton(
           onPressed: action,
-          child: Text(clkText, style: AppTextStyles.lexendsemuBoldButton16),
+          child: Text(clkText, style: AppTextStyles.lexendsemiBoldButton16),
         ),
       ],
     );

@@ -11,5 +11,6 @@ class AppImages {
   static const String registerImage = 'assets/images/register.png';
   static const String googleIcon = 'assets/images/GoogleIcon.png';
   static const String faceBookIcon = 'assets/images/FaceBookLogo.png';
+  static const String userPlaceHolder = 'assets/images/user place holder.png';
   const AppImages._();
 }
