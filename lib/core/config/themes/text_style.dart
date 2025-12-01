@@ -16,6 +16,11 @@ class AppTextStyles {
     fontSize: 30,
     // color: AppColors.onSurface,
   );
+  static const TextStyle lexendBold28 = TextStyle(
+    fontWeight: .bold,
+    fontSize: 28,
+    // color: AppColors.onSurface,
+  );
   static const TextStyle lexendBold36 = TextStyle(
     fontWeight: .bold,
     fontSize: 36,
@@ -38,6 +43,14 @@ class AppTextStyles {
   static const TextStyle lexendsemiBoldButton22 = TextStyle(
     fontSize: 22,
     fontWeight: FontWeight.bold,
+  );
+  static const TextStyle lexendBold20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle regular18 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
   );
 
   const AppTextStyles._();

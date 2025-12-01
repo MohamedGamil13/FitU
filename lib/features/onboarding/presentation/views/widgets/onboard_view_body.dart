@@ -45,7 +45,7 @@ class _OnboardViewBodyState extends State<OnboardViewBody> {
               },
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: EdgeInsetsGeometry.symmetric(horizontal: 16),
+                  padding: const EdgeInsetsGeometry.symmetric(horizontal: 16),
                   child: pageViewList[index],
                 );
               },
@@ -57,7 +57,7 @@ class _OnboardViewBodyState extends State<OnboardViewBody> {
           AnimatedSmoothIndicator(
             activeIndex: _currentIndex,
             count: pageViewList.length,
-            effect: SlideEffect(
+            effect: const SlideEffect(
               spacing: 8.0,
               radius: 4.0,
               dotWidth: 8.0,

@@ -28,7 +28,10 @@ class ResetPasswordViewBody extends StatelessWidget {
             const SizedBox(height: 35),
             const CustomTextfield(fieldHint: 'Email Address'),
             const SizedBox(height: 35),
-            ElevatedButton(onPressed: () {}, child: Text('Send Reset Link')),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text('Send Reset Link'),
+            ),
             const SizedBox(height: 35),
             CustomTextRow(
               clkText: 'Back to Login',

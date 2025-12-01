@@ -9,6 +9,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -22,7 +23,7 @@ void main() async {
         ? HydratedStorageDirectory.web
         : HydratedStorageDirectory((await getTemporaryDirectory()).path),
   );
-  runApp(FitU());
+  runApp(const FitU());
 }
 
 class FitU extends StatelessWidget {
@@ -34,13 +35,18 @@ class FitU extends StatelessWidget {
       create: (context) => ThemeCubit(),
       child: BlocBuilder<ThemeCubit, ThemeMode>(
         builder: (context, state) {
-          return MaterialApp.router(
-            routerConfig: appRouter,
-            debugShowCheckedModeBanner: false,
-            title: "Fit U",
-            theme: getLightMode(),
-            darkTheme: getDarkMode(),
-            themeMode: state,
+          return ScreenUtilInit(
+            designSize: const Size(360, 690),
+            minTextAdapt: true,
+            splitScreenMode: true,
+            builder: (context, child) => MaterialApp.router(
+              routerConfig: appRouter,
+              debugShowCheckedModeBanner: false,
+              title: "Fit U",
+              theme: getLightMode(),
+              darkTheme: getDarkMode(),
+              themeMode: state,
+            ),
           );
         },
       ),

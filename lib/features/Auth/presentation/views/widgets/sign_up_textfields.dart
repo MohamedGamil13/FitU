@@ -49,7 +49,7 @@ class SignUpTextfields extends StatelessWidget {
           onPressed: () {
             context.go(AppRoutes.homeView);
           },
-          child: Text('Create Account'),
+          child: const Text('Create Account'),
         ),
         const SizedBox(height: 45),
       ],
