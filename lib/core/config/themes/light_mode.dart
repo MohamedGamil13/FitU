@@ -48,5 +48,6 @@ ThemeData getLightMode() {
         borderSide: const BorderSide(color: AppColors.primaryColor, width: 1),
       ),
     ),
+    listTileTheme: const ListTileThemeData(tileColor: AppColors.whtColor),
   );
 }

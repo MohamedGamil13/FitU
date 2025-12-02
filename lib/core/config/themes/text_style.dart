@@ -21,6 +21,11 @@ class AppTextStyles {
     fontSize: 28,
     // color: AppColors.onSurface,
   );
+  static const TextStyle lexendBold24 = TextStyle(
+    fontWeight: .bold,
+    fontSize: 24,
+    // color: AppColors.onSurface,
+  );
   static const TextStyle lexendBold36 = TextStyle(
     fontWeight: .bold,
     fontSize: 36,

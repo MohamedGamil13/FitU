@@ -40,5 +40,6 @@ ThemeData getDarkMode() {
         borderSide: const BorderSide(color: AppColors.outlineBorderColorDark),
       ),
     ),
+    listTileTheme: const ListTileThemeData(tileColor: AppColors.fillColorDark),
   );
 }
