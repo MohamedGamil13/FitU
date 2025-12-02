@@ -1,6 +1,6 @@
 import 'package:fitu/core/config/themes/app_colors.dart';
 import 'package:fitu/core/config/themes/extension/theme_extension.dart';
-import 'package:fitu/core/helpers/custom_box_shadow.dart';
+import 'package:fitu/core/widgets/custom_box_shadow.dart';
 import 'package:flutter/material.dart';
 
 class CalorieGoalCard extends StatelessWidget {

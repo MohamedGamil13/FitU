@@ -1,6 +1,6 @@
 import 'package:fitu/core/constants/images_path.dart';
-import 'package:fitu/core/helpers/custom_snackbar.dart';
 import 'package:fitu/core/routes/router_name.dart';
+import 'package:fitu/core/widgets/custom_snackbar.dart';
 import 'package:fitu/features/Auth/presentation/view_model/cubit/sign_in_with_google_cubit.dart';
 import 'package:fitu/features/Auth/presentation/views/widgets/auth_custom_button.dart';
 import 'package:fitu/features/Auth/presentation/views/widgets/custom_divider.dart';

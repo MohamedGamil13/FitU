@@ -1,3 +1,4 @@
+import 'package:fitu/features/home/presentation/views/widgets/activity_icons_row.dart';
 import 'package:fitu/features/home/presentation/views/widgets/calorie_goal_card.dart';
 import 'package:fitu/features/home/presentation/views/widgets/home_view_app_bar.dart';
 import 'package:fitu/features/home/presentation/views/widgets/home_view_body_section.dart';
@@ -16,6 +17,7 @@ class HomeViewBody extends StatelessWidget {
           HomeViewBodySection(),
           SizedBox(height: 24),
           CalorieGoalCard(progress: 0.60, goal: 2000),
+          ActivityIconsRow(),
         ],
       ),
     );

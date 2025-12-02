@@ -20,4 +20,5 @@ class AppColors {
   static const Color fillColorLight = Color(0xffF2F2F2);
   static const Color outlineBorderColorDark = Color(0xff3b5443);
   static const Color whtColor = Color(0xffffffff);
+  static const Color circleAvtarColor = Color(0xff182c1f);
 }
