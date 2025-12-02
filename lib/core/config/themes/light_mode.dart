@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 ThemeData getLightMode() {
   return ThemeData(
+    scaffoldBackgroundColor: const Color(0xfff6f8f6),
     brightness: .light,
     useMaterial3: false,
     colorScheme: const ColorScheme(
