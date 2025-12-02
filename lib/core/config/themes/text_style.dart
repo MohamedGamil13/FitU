@@ -52,6 +52,10 @@ class AppTextStyles {
     fontSize: 16,
     fontWeight: FontWeight.w500,
   );
+  static const TextStyle lexendSemiBold14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+  );
 
   const AppTextStyles._();
 }

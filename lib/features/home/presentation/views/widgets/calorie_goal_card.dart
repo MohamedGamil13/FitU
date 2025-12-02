@@ -45,7 +45,9 @@ class CalorieGoalCard extends StatelessWidget {
                   backgroundColor: isDark
                       ? Colors.white.withOpacity(0.08)
                       : Colors.grey.shade200,
-                  valueColor: const AlwaysStoppedAnimation(Color(0xFF00D04A)),
+                  valueColor: const AlwaysStoppedAnimation(
+                    AppColors.primaryColor,
+                  ),
                 ),
 
                 Center(
