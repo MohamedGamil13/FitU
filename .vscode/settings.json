@@ -1,5 +1,6 @@
 {
   "files.associations": {
     "mm": "c"
-  }
+  },
+  "cmake.sourceDirectory": "M:/Flutter projects/FitU/fitu/linux"
 }
