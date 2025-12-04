@@ -41,5 +41,6 @@ ThemeData getDarkMode() {
       ),
     ),
     listTileTheme: const ListTileThemeData(tileColor: AppColors.fillColorDark),
+    iconTheme: const IconThemeData(color: AppColors.primaryColor),
   );
 }

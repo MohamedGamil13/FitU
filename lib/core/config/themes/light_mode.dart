@@ -49,5 +49,6 @@ ThemeData getLightMode() {
       ),
     ),
     listTileTheme: const ListTileThemeData(tileColor: AppColors.whtColor),
+    iconTheme: const IconThemeData(color: AppColors.primaryColor),
   );
 }
