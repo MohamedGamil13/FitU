@@ -25,9 +25,9 @@ class _HomeViewState extends State<HomeView> {
         buttonBackgroundColor: AppColors.circleAvtarColorDark,
         animationDuration: const Duration(milliseconds: 200),
         items: const [
-          Icon(Icons.home, size: 30),
-          Icon(Icons.favorite, size: 30),
-          Icon(Icons.settings, size: 30),
+          Icon(Icons.restaurant_menu, size: 30),
+          Icon(Icons.directions_run, size: 30),
+          Icon(Icons.chat_bubble_outline, size: 30),
         ],
       ),
     );

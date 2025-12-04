@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fitu/core/constants/env_key.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class GoogleAuthService {
@@ -7,8 +6,8 @@ class GoogleAuthService {
   Future<User?> signInWithGoogle() async {
     try {
       await GoogleSignIn.instance.initialize(
-        clientId: EnvKey.cLIENT_ID,
-        serverClientId: EnvKey.cLIENT_ID_server,
+        // clientId: EnvKey.cLIENT_ID,
+        // serverClientId: EnvKey.cLIENT_ID_server,
       );
 
       final googleUser = await GoogleSignIn.instance.authenticate();
